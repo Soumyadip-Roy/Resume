@@ -1,0 +1,124 @@
+:root{
+    --primaryLight:white;
+    --primaryDark:rgb(32, 32, 32);
+}
+
+body{
+    background:var(--primaryLight);
+    /* background-color: rgb(238, 238, 238); */
+    background-color: var(--primaryDark);
+    color:var(--primaryLight);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+
+/*flexboxes*/
+.about-me-head , .nav{
+    display:flex;
+    flex-direction: row;
+}
+
+.main-container>section{
+    width:75%;
+    margin: auto;
+}
+.main-container>header{
+    width:85%;
+    margin: auto;
+}
+/* nav */
+.nav{
+    border-radius: 4px;
+    margin-top: 10px;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: rgb(221, 220, 220);
+    transition: all ease-in-out 400ms;
+}
+.nav a{
+    font-size: 17px;
+    text-decoration: none;
+    transition: all 200ms ease;
+}
+.nav a:hover{
+    font-size: 14px;
+}
+.nav:hover{
+    background-color: rgb(192, 192, 192);
+}
+
+/* for all section */
+section{
+    margin-top: 80px !important;
+    padding:30px;
+}
+section:nth-child(2n){
+    background-color: slateblue;
+    color:var(--primaryLight);
+    border-radius: 10px;
+    transition: all ease-in-out 400ms;
+
+}
+section:nth-child(2n):hover{
+    transform: scale(0.98);
+}
+/*section-1 - About section*/
+
+#self-profile-photo>img{
+    height:250px;
+    border-radius: 30% 70% 39% 61% / 46% 7% 93% 54%  ;
+    transform: rotate(-5deg);
+    box-shadow: black 10px 20px 80px;
+    transition: all ease-in-out 1000ms;
+}
+#self-profile-photo>img:hover{
+    transform: rotate(5deg);
+}
+#self-profile-photo{
+    height:280px;
+    padding: 10px;
+    display: inline-block;
+    background-color: rgb(228, 212, 212);
+    border-radius: 85% 47% 60% 59% / 97% 55% 56% 38% ;
+    margin-right: 30px;
+}
+
+.about-section #name{
+    margin: 0;
+}
+
+.about-section a {
+    text-decoration: none;
+    color:rgb(231, 154, 184);
+}
+
+/* section 2 - skills */
+.skills-section h4 , .skills-section p{
+    display: inline-block;
+}
+.skills-section p{
+    font-weight: bold;
+    margin-left: 15px;
+    transition:all ease-in-out 400ms;
+}
+.skills-section p:hover{
+    color:red;
+}
+
+/* section 3 - project section */
+
+.projects-section>div{
+    margin-left: 10px;
+    padding:20px 10px ;
+}
+.js-mini-projects > div >h4{
+    font-size: 14px;
+}
+
+
+
+/* form */
+
+.form-element{
+    margin:10px;
+}
