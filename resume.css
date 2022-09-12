@@ -121,3 +121,17 @@ section:nth-child(2n):hover{
 .form-element{
     margin:10px;
 }
+
+
+
+@media screen and (max-width:786px) {
+    .main-container>section{
+        width:92%;
+        margin: auto;
+    }
+    .about-me-head{
+        flex-direction: column;
+        gap:25px;
+    }
+
+}
